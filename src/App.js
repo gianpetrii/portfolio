@@ -8,6 +8,9 @@ import Nav from './sections/Nav/Nav';
 import Portfolio from './sections/Portfolio/Portfolio';
 import Services from './sections/Services/Services';
 
+// Styles
+import './App.css';
+
 
 const App = () => {
     return (
