@@ -1,4 +1,4 @@
-/* FONT FAMILY --> busco en Google fonts las que me gustan */
+/* FONT FAMILY --> busco en Google fonts las que me gustan y traigo import y uso font-family*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,600&display=swap');
 
 /* GENERAL CSS */
@@ -130,4 +130,33 @@ img {
     display: block;
     width: 100%;
     object-fit: cover;
+}
+
+
+
+
+/*                      MEDIA QUERIES (RESPONSIVE)                      */
+
+/*   (tablets)   */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    section {
+        margin-top: 6rem;
+    }
+}
+
+
+
+/*   (phones)   */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
 }
