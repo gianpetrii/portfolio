@@ -1,7 +1,7 @@
 /* FONT FAMILY --> busco en Google fonts las que me gustan y traigo import y uso font-family*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,600&display=swap');
 
-/* GENERAL CSS */
+/* ============== GENERAL STYLE ============== */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@
     text-decoration: none;
 }
 
-/* CSS VARIABLES, CAN BE USED ANYWHERE */
+/* ============== CSS VARIABLES ============== */
 :root {
     /* COLORS */
     --color-bg: #2D142C;
@@ -50,12 +50,12 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../assets/bg-texture.png);
+    background-image: url(./assets/bg-texture.png);
 }
 
 
 
-/* GENERAL STYLES FOR CONTAINERS */
+/* ============== GENERAL STYLES FOR CONTAINERS ============== */
 section {   /* almost all sections are wrapped in section html tag */
     margin-top: 8rem;
 }
@@ -67,7 +67,7 @@ section {   /* almost all sections are wrapped in section html tag */
 
 
 
-/* GENERAL STYLES FOR TEXT */
+/* ============== GENERAL STYLES FOR TEXT ============== */
 h1, h2, h3, h4, h5 {
     font-weight: 500;
 }
@@ -101,7 +101,7 @@ a:hover {
 
 
 
-/* GENERAL STYLES FOR BUTTONS */
+/* ============== GENERAL STYLES FOR BUTTONS ============== */
 .btn {
     width: max-content;
     display: inline-block;
@@ -125,7 +125,7 @@ a:hover {
 
 
 
-/* GENERAL STYLES FOR IMAGES */
+/* ============== GENERAL STYLES FOR IMAGES ============== */
 img {
     display: block;
     width: 100%;
@@ -135,7 +135,7 @@ img {
 
 
 
-/*                      MEDIA QUERIES (RESPONSIVE)                      */
+/* ============== MEDIA QUERIES ============== */
 
 /*   (tablets)   */
 @media screen and (max-width: 1024px) {
