@@ -1,6 +1,6 @@
 /* ============== GENERAL HEADER STYLE ============== */
 header {
-   height: 100vh;
+   /* saque hegiht definido xq me recortaba imagen */
    padding-top: 7rem;
    overflow: hidden;
 }
@@ -34,4 +34,40 @@ header {
    position: absolute;
    left: 0;
    bottom: 3rem;
+}
+.header_socials::after {
+   content: "";
+   width: 1px;
+   height: 2rem;
+   background-color: var(--color-primary);
+}
+
+
+
+/* ============== HEADER SOCIALS ============== */
+.me {
+   background: linear-gradient(var(--color-primary), transparent);   /* gradient */
+   width: 22rem;
+   height: 30rem;
+   position: relative;  /* uso relative xq con absolute queda debajo ya uqe abs es como que no 
+   hay nada pero relative deja el lugar que deberia ocupar vacio */
+   left: calc(50% - 11rem);   /* calculo para centrar img */
+   border-radius: 12rem 12rem 0 0; /* con esto hago el redondel trasero */
+   margin-top: 4rem;
+   overflow: hidden;    /* esconde el sobrante de la imagen */
+   padding: 4rem 1.5rem 1.5rem 1.5rem; /* empujo la img dentro del background hacia abajoy dnetro */
+
+}
+
+
+
+/* ============== SCROLL DOWN ============== */
+.scroll_down {
+   position: absolute;
+   right: -2.3rem;
+   bottom: 5rem;
+   transform: rotate(90deg);
+   font-weight: 300;
+   font-size: 0.9rem;
+
 }

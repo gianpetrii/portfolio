@@ -127,9 +127,9 @@ a:hover {
 
 /* ============== GENERAL STYLES FOR IMAGES ============== */
 img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
+   display: block;
+   width: 100%;
+   object-fit: cover;
 }
 
 
@@ -147,8 +147,6 @@ img {
         margin-top: 6rem;
     }
 }
-
-
 
 /*   (phones)   */
 @media screen and (max-width: 600px) {
