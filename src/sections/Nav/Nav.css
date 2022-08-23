@@ -36,7 +36,7 @@ nav ul li a {
 
 nav ul li a:hover {
    background: var(--color-white);
-   color: var(--color-primary-variant);   /* ya esta definido white para a:hover pero me gusta mas este para icono */
+   color: var(--color-primary-variant-full);   /* ya esta definido white para a:hover pero me gusta mas este para icono */
 }
 
 nav ul li a.active {
