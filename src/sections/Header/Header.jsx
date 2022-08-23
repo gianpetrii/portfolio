@@ -11,7 +11,6 @@ function Header() {
    return (
       <>
          <header>
-                
             <div className="container header_container">
                <h5>Hello there! I am</h5>
                <h1>Gianluca Petri</h1>

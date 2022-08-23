@@ -7,9 +7,8 @@ import './Testimonials.css';
 
 function Testimonials() {
    return (
-      <>
-         <h1>Hola soy testimonials</h1>
-      </>
+      <section id='testimonials'>testimonials
+      </section>
    );
 }
 

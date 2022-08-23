@@ -15,7 +15,7 @@
 /* ============== CSS VARIABLES ============== */
 :root {
     /* COLORS */
-    --color-bg: #2D142C;
+    --color-bg: #1F1F38;
     --color-bg-variant: #2C2C6C;
     --color-primary: #4DB5FF;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
@@ -58,6 +58,7 @@ body {
 /* ============== GENERAL STYLES FOR CONTAINERS ============== */
 section {   /* almost all sections are wrapped in section html tag */
     margin-top: 8rem;
+    height: 100vh;
 }
 
 .container{
@@ -89,6 +90,14 @@ section > h2 {
 
 .text-light {
     color: var(--color-light);
+}
+
+ul{
+   list-style: none;
+}
+
+li {
+   list-style: none;
 }
 
 a {

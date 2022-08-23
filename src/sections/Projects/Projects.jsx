@@ -3,9 +3,8 @@ import './Projects.css';
 
 function Projects() {
     return (
-        <>
-            <h1>Hola soy Projects!</h1>
-        </>
+      <section id='projects'>projects
+      </section>
     );
 }
 
