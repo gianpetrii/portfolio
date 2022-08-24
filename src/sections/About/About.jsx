@@ -31,7 +31,7 @@ function About() {
     return (
       <section id='about'>
          <h5>Get to Know</h5>
-         <h2>About me</h2>
+         <h2>About Me</h2>
 
          <div className="container about_container" >
             <div className='about_me'>
@@ -52,7 +52,7 @@ function About() {
                </div>
                      
                <p>
-               Lorem ipsum dolor sit amet consectetur adipiscing elit, quisque tristique sagittis ornare vitae himenaeos habitasse, fringilla facilisis massa iaculis diam nibh. Iaculis quisque nullam praesent nibh tristique fermentum ridiculus morbi curabitur sociis, dapibus a tempus et auctor eu bibendum magna varius nascetur felis, eros potenti imperdiet faucibus fames nulla proin urna tincidunt. Augue venenatis etiam hac mattis nullam diam vulputate morbi mollis, tortor justo maecenas aenean massa a fames enim tempus, mauris aliquet eleifend donec tellus metus fermentum dictum.
+               Lorem ipsum dolor sit amet consectetur adipiscing elit, quisque tristique sagittis ornare vitae himenaeos habitasse, fringilla facilisis massa iaculis diam nibh. Iaculis quisque nullam praesent nibh tristique fermentum ridiculus morbi curabitur sociis, dapibus a tempus et auctor eu bibendum magna varius nascetur felis, eros potenti imperdiet faucibus fames nulla proin urna tincidunt. 
                </p>
 
                <a href='#contact' className='btn btn-primary'>Let's Talk</a>
