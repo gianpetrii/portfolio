@@ -1,0 +1,169 @@
+/* CONTAINERS */
+.experience_container {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+   transition: var(--transition);
+}
+
+.experience_type {
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   font-size: 1.2rem;
+   margin-bottom: 1.5rem;
+}
+
+.experience_card {
+   background: transparent;
+   padding: 2rem 1.5rem;
+   border-radius: 2rem;
+   border: 1px solid var(--color-primary);
+   transition: var(--transition);
+   width: 100%;
+}
+.experience_card:hover {
+   background: var(--color-white);
+   border-color: var(--color-white);
+   cursor: default;
+}
+.experience_card:hover h3, .experience_card:hover h4, .experience_card:hover .experience_icon {
+   color: var(--color-bg-variant);
+}
+
+
+
+
+/* TEXTS and ICONS */
+
+/* general */
+.experience_card h3, .experience_card h4, .experience_icon {
+   color: var(--color-primary);
+   transition: var(--transition);
+}
+
+.experience_type h3 {
+   transition: var(--transition);
+   border-bottom: 1px solid;
+   cursor: pointer;
+   margin-top: 50px;
+}
+
+/* ACTIVE and NON ACTIVE TEXT */
+.experience_type .non, .experience_type .active {
+   border-bottom-color:transparent;
+}
+.experience_type .active {
+   color: var(--color-primary);
+} 
+.experience_type .non:hover {
+   border-bottom-color: var(--color-white);
+}
+.experience_type .active:hover {
+   border-bottom-color: var(--color-primary);
+}
+
+
+/* ACTIVE and NON ACTIVE */
+.experience_container .non {
+   display: none;
+}
+
+
+
+.experience_card:hover .text-light {
+   color: var(--color-primary);
+   transition: var(--transition);
+}
+
+.experience_card h3 {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+.experience_flip_icon {
+   display: none;
+}
+
+.experience_content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 2rem;
+}
+
+.experience_details {
+   display: flex;
+   gap: 0.5rem;
+}
+
+.experience_icon {
+   margin-top: 6px;
+   color: var(--color-white);
+   width: 25px;
+}
+
+
+
+
+/* ============== MEDIA QUERIES ============== */
+
+/*   (phones)   */
+@media screen and (max-width: 800px) {
+   
+
+   .experience_container {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   .experience_flip_icon {
+      display:inline;
+      color: var(--color-white);
+      font-size: 1.5rem;
+      position: relative;
+      left: 10px;
+      top: 6px;
+   }
+   .experience_card:hover .experience_flip_icon {
+      color: var(--color-bg-variant);
+   }
+}
+
+
+
+/*   (smaller phones)   */
+@media screen and (max-width: 600px) {
+
+   .experience_card {
+      padding: 2rem 1rem;
+   }
+
+   .experience_type {
+      margin-left: 1%;
+      margin-right: 1%;
+      gap: 0.7rem;
+   }
+   
+   .experience_type h3 {
+      font-size: 1rem;
+   }
+
+}
+
+@media screen and (max-width: 400px) {
+
+
+   .experience_type {
+      margin-left: 1%;
+      margin-right: 1%;
+      gap: 0.4rem;
+   }
+   
+   
+   
+   .experience_type h3 {
+      font-size: 0.9rem;
+   }
+
+}
+

@@ -59,7 +59,7 @@ body {
 /* ============== GENERAL STYLES FOR CONTAINERS ============== */
 section {   /* almost all sections are wrapped in section html tag */
     margin-top: 8rem;
-    height: 100vh;
+    
 }
 
 .container{
