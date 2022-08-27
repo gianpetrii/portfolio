@@ -1,0 +1,57 @@
+/* CONTAINER */
+.portfolio-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2.5rem;
+}
+
+
+
+/* ARTICLE */
+.portfolio-article {
+   background: var(--color-bg-variant);
+   padding: 1.3rem;
+   border-radius: 2rem;
+   border: 1px solid transparent;
+   transition: var(--transition);
+}
+.portfolio-article:hover {
+   border-color: var(--color-primary-variant);
+   background: transparent;
+}
+
+.portfolio-div-image {
+   border-radius: 1.5rem;
+   overflow: hidden;
+}
+
+.portfolio-article h3 {
+   margin: 1.2rem 0 2rem;
+}
+
+.portfolio-buttons {
+   display: flex;
+   justify-content: center;
+   gap: 1.5rem;
+}
+
+
+
+/* ============== MEDIA QUERIES ============== */
+
+/*   (tablets)   */
+@media screen and (max-width: 1250px) {
+   .portfolio-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+   }
+}
+
+/*   (phones)   */
+@media screen and (max-width: 700px) {
+   .portfolio-container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+   }
+
+}
