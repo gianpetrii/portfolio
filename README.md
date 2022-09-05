@@ -46,4 +46,8 @@ This is my personal portoflio, a space created in order to showcase the projects
 
 #### Contact:
 
+-  emailjs working
+
 #### Footer:
+
+-  all
