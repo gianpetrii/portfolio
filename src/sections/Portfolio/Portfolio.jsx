@@ -64,7 +64,7 @@ function Portfolio() {
                >
 
                   {projects.map(project => (
-                     <SwiperSlide className='portfolio-article'>   {/* AGREGAR QUE PARA PHONE SE PASE PARA EL COSTADO */}
+                     <SwiperSlide className='portfolio-article' key={project.id}>   {/* AGREGAR QUE PARA PHONE SE PASE PARA EL COSTADO */}
                         <div className="portfolio-div-image">
                            <img src={project.image} />{/* arreglar tema de ruta imagen */}
                         </div>
@@ -85,7 +85,7 @@ function Portfolio() {
                <div className="portfolio-container container">
 
                   {projects.map(project => (
-                     <article className='portfolio-article'>   {/* AGREGAR QUE PARA PHONE SE PASE PARA EL COSTADO */}
+                     <article className='portfolio-article' key={project.id}>   {/* AGREGAR QUE PARA PHONE SE PASE PARA EL COSTADO */}
                         <div className="portfolio-div-image">
                            <img src={project.image} />{/* arreglar tema de ruta imagen */}
                         </div>

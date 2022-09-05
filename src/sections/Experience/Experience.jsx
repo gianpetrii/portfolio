@@ -15,7 +15,7 @@ function Experience() {
    const [mobileActiveCard, setMobileActiveCard] = useState(["clicked", "not"]);
 
     return (
-      <section id='experience'>
+      <section id='experience' className='experiece-section'>
          <h5>Skills I Have</h5>
          <h2>My Experience</h2>
 

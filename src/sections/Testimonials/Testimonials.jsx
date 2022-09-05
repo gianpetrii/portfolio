@@ -64,7 +64,7 @@ function Testimonials() {
          >
                
                {testimonials.map(testimonial => (
-                  <SwiperSlide className='testimonials-article'>
+                  <SwiperSlide className='testimonials-article' key={testimonial.id}>
                      <div className='testimonials-avatar'>
                         <img src={testimonial.image} alt="avatar" />
                      </div>
