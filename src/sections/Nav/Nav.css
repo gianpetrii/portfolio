@@ -31,12 +31,13 @@ nav ul li a {
    font-size: 1.1rem;
    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); /*glossy effect */
    backdrop-filter: blur(15px);
+   color: var(--color-primary);
 
 }
 
 nav ul li a:hover {
    background: var(--color-white);
-   color: var(--color-primary-variant-full);   /* ya esta definido white para a:hover pero me gusta mas este para icono */
+   color: var(--color-bg-variant);   /* ya esta definido white para a:hover pero me gusta mas este para icono */
 }
 
 nav ul li a.active {

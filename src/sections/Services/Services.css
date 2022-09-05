@@ -8,23 +8,19 @@
 }
 
 .service-article {
-   background-color: var(--color-primary-variant);
    border-radius: 0rem 0.5rem 1.5rem 1.5rem;
-   border: 1px solid var(--color-primary);
+   border: 1px solid var(--color-white);
    height: fit-content;
    transition: var(--transition);
-}
-.service-article:hover {
    background-color: transparent;
-   border-color: var(--color-primary-variant);
-   cursor: default;
+   border-top: 1px solid var(--color-bg-variant) !important;
 }
 
 
 
 /* CARDS */
 .service-head {
-   background: var(--color-primary);
+   background: var(--color-bg-variant);
    padding: 2rem;
    border-radius: 0rem 0.5rem 1.5rem 1.5rem;
    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);

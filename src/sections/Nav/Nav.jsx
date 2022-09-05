@@ -5,10 +5,10 @@ import { useState } from 'react';
 import './Nav.css';
 
 // dependencias
-import { AiOutlineHome, AiOutlineUser, AiOutlineFilePdf } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai';
 import { BiBook, BiMessageSquareDetail } from 'react-icons/bi';
 import { MdMiscellaneousServices } from 'react-icons/md';
-import { useEffect } from 'react';
+import { VscFolderLibrary } from 'react-icons/vsc';
 
 
 
@@ -30,7 +30,7 @@ function Nav() {
       icon: <MdMiscellaneousServices />
    },{
       path: "#portfolio",
-      icon: <AiOutlineFilePdf />
+      icon: <VscFolderLibrary />
    },{
       path: "#contact",
       icon: <BiMessageSquareDetail />
