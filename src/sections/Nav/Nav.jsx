@@ -15,27 +15,6 @@ import { VscFolderLibrary } from 'react-icons/vsc';
 function Nav() {
    const [activeNav, setActiveNav] = useState("#");   // defino header como initialvalue
 
-   // listado de secciones
-   const sections = [{
-      path: "#",
-      icon: <AiOutlineHome />
-   }, {
-      path: "#about",
-      icon: <AiOutlineUser />
-   },{
-      path: "#experience",
-      icon: <BiBook />
-   },{
-      path: "#services",
-      icon: <MdMiscellaneousServices />
-   },{
-      path: "#portfolio",
-      icon: <VscFolderLibrary />
-   },{
-      path: "#contact",
-      icon: <BiMessageSquareDetail />
-   },]
-
    // manejo de clickeo de seccion activa
 
 
@@ -59,3 +38,24 @@ function Nav() {
 }
 
 export default Nav;
+
+   // listado de secciones
+   const sections = [{
+      path: "#",
+      icon: <AiOutlineHome />
+   }, {
+      path: "#about",
+      icon: <AiOutlineUser />
+   },{
+      path: "#experience",
+      icon: <BiBook />
+   },{
+      path: "#services",
+      icon: <MdMiscellaneousServices />
+   },{
+      path: "#portfolio",
+      icon: <VscFolderLibrary />
+   },{
+      path: "#contact",
+      icon: <BiMessageSquareDetail />
+   },]

@@ -1,0 +1,71 @@
+/* ================== SECTION  ================== */
+footer {
+   background-color: var(--color-primary);
+   padding: 3rem 0;
+   text-align: center;
+   font-size: 0.9rem;
+   margin-top: 7rem;
+}
+
+.footer-logo {
+   font-size: 2rem;
+   font-weight: 500;
+   margin-bottom: 2rem;
+   display: inline-block;
+}
+
+
+
+
+
+/* ================== LINKS  ================== */
+.permalinks {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 2rem;
+   margin: 0 auto 3rem;
+}
+
+footer a {
+   color: var(--color-bg);
+}
+
+.footer-icons {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+   margin-bottom: 4rem;
+} 
+
+.footer-icon {
+   color: var(--color-bg);
+   border: 1px solid var(--color-bg);
+   font-size: x-large;
+   align-self: center;
+   padding: 0.3rem 0.6rem 0rem 0.6rem;
+   border-radius: 7px;
+   transition: var(--transition);
+}
+.footer-icon:hover {
+   border-color: var(--color-white);
+}
+
+.footer-copyright {
+   margin-bottom: 60px;
+}
+
+
+
+
+
+
+/* ============== MEDIA QUERIES ============== */
+
+/*   (tablets)   */
+@media screen and (max-width: 1024px) {
+   .permalinks {
+      flex-direction: column;
+      gap: 1.5rem;
+   }
+}
