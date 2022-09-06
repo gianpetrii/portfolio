@@ -6,8 +6,8 @@ This is my personal portoflio, a space created in order to showcase the projects
 
 #### General:
 
--  Change color pallette
--  Add theme versions with different color pallettes
+-  [x] Change color pallette
+-  [] Add theme versions with different color pallettes
 -  Add introductory animation
 
 #### Nav:
@@ -37,17 +37,17 @@ This is my personal portoflio, a space created in order to showcase the projects
 -  Change images
 -  Change titles
 -  Change links
--  When mobile make scroll with swiperJS
+-  [x] When mobile make scroll with swiperJS
 
 #### Testimonials:
 
--  Add swiperJS
--  Display none but leave it done
+-  [x] Add swiperJS
+-  [x] Display none but leave it done
 
 #### Contact:
 
--  emailjs working
+-  [x] emailjs working
 
 #### Footer:
 
--  all
+-  [x] all

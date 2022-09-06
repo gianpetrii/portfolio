@@ -21,6 +21,10 @@
    background: transparent;
 }
 
+.swiper-pagination {
+   top: 95%;
+}
+
 .portfolio-div-image {
    border-radius: 1.5rem;
    overflow: hidden;
@@ -35,6 +39,7 @@
    justify-content: center;
    gap: 1.5rem;
    padding-bottom: 15px;
+   
 }
 
 

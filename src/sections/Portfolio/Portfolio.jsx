@@ -22,14 +22,15 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 function Portfolio() {
    // handle taking out navigation in slider when tablet or mobile display
-   const [isSmallerThanTablet, setIsSmallerThanTablet] = useState(false);
+   const [isSmallerThanTablet, setIsSmallerThanTablet] = useState(3);
    
    useEffect(() => {
       function handleResize() {
         if (window.innerWidth < 1250) {
-          setIsSmallerThanTablet(true);
-        } else {
-          setIsSmallerThanTablet(false);
+          setIsSmallerThanTablet(2);
+        }
+        if (window.innerWidth < 700){
+          setIsSmallerThanTablet(1);
         }
       }
   
@@ -46,22 +47,21 @@ function Portfolio() {
          <h5>My best ventures</h5>
          <h2>Projects and Developments</h2>
 
-         {isSmallerThanTablet ? 
-            <>
-               <Swiper
-                  spaceBetween={30}
-                  centeredSlides={true}
-                  autoplay={{
-                     delay: 2500,
-                     disableOnInteraction: false,
-                  }}
-                  pagination={{
-                     clickable: true,
-                  }}
-                  navigation={false}
-                  modules={[Autoplay, Pagination, Navigation]}
-                  className="portfolio-container container"
-               >
+         <Swiper
+            slidesPerView={isSmallerThanTablet}
+            spaceBetween={30}
+            autoplay={{
+               delay: 3000,
+               disableOnInteraction: false,
+            }}
+            pagination={{
+               clickable: true
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="portfolio-container container"
+         >
+
 
                   {projects.map(project => (
                      <SwiperSlide className='portfolio-article' key={project.id}>   {/* AGREGAR QUE PARA PHONE SE PASE PARA EL COSTADO */}
@@ -78,30 +78,7 @@ function Portfolio() {
                      </SwiperSlide>
                   ))}
 
-               </Swiper>
-
-            </> : <>
-
-               <div className="portfolio-container container">
-
-                  {projects.map(project => (
-                     <article className='portfolio-article' key={project.id}>   {/* AGREGAR QUE PARA PHONE SE PASE PARA EL COSTADO */}
-                        <div className="portfolio-div-image">
-                           <img src={project.image} />{/* arreglar tema de ruta imagen */}
-                        </div>
-                        <h3>{project.title}</h3>
-
-                        <div className="portfolio-buttons">
-                           <a href={project.github} className='btn btn-secondary' target="_blank">GitHub</a>
-                           <a href={project.demo} className='btn btn-primary' target="_blank">Live Demo</a>
-                        </div>
-
-                     </article>
-                  ))}
-
-               </div>  
-            </>
-         }
+         </Swiper>
 
       </section>
     );

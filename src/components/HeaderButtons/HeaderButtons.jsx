@@ -1,10 +1,12 @@
 // Files
-import CV from '../../assets/CV.pdf';
+import CVEsp from '../../assets/Esp-GianlucaPetriCV.pdf';
+import CVIng from '../../assets/Ing-GianlucaPetriCV.pdf';
+
 
 function HeaderButtons() {
     return (
         <div className="header_btn_container">
-            <a href={CV} className="btn btn-secondary">Download CV</a>
+            <a href={CVEsp} className="btn btn-secondary">Download CV</a>
             <a href="#contact" className="btn btn-primary" >Let's talk</a>
         </div>
     );
