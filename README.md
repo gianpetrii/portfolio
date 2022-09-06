@@ -7,36 +7,36 @@ This is my personal portoflio, a space created in order to showcase the projects
 #### General:
 
 -  [x] Change color pallette
--  [] Add theme versions with different color pallettes
--  Add introductory animation
+-  [ ] Add theme versions with different color pallettes
+-  [ ] Add introductory animation
 
 #### Nav:
 
--  See if it can turn like when clicked when a section scrolls into view
+-  [ ] See if it can turn like when clicked when a section scrolls into view
 
 #### Header:
 
--  When download CV ask if english / spanish / both
--  Change photo
--  Change header links linkedin, github, demos
+-  [ ] When download CV ask if english / spanish / both
+-  [ ] Change photo
+-  [ ] Change header links linkedin, github, demos
 
 #### About:
 
--  Change photo
+-  [ ] Change photo
 
 #### Experience:
 
--  When mobile flip on click for web developments
+-  [ ] When mobile flip on click for web developments
 
 #### Services:
 
--  Scroll down animation when head is clicked
+-  [ ] Scroll down animation when head is clicked
 
 #### Portfolio:
 
--  Change images
--  Change titles
--  Change links
+-  [ ] Change images
+-  [ ] Change titles
+-  [ ] Change links
 -  [x] When mobile make scroll with swiperJS
 
 #### Testimonials:
