@@ -14,7 +14,6 @@
    border-radius: 2rem;
    border: 1px solid var(--color-primary);
    transition: var(--transition);
-   
 }
 .portfolio-article:hover {
    border-color: var(--color-white);
@@ -22,23 +21,28 @@
 }
 
 .swiper-pagination {
-   top: 95%;
+   top: 94%;
 }
 
 .portfolio-div-image {
    border-radius: 1.5rem;
    overflow: hidden;
+   border: 1px solid var(--color-primary);
+}
+.portfolio-article:hover .portfolio-div-image {
+   border-color: var(--color-white);
 }
 
 .portfolio-article h3 {
-   margin: 0.5rem 0 0.2rem 0;
+   margin: 0.5rem 0 2rem 0;
+   font-size: x-large;
 }
 
 .portfolio-buttons {
    display: flex;
    justify-content: center;
    gap: 1.5rem;
-   padding-bottom: 15px;
+   padding-bottom: 5px;
    
 }
 

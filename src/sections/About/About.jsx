@@ -20,12 +20,12 @@ function About() {
       content: "3+ Years Working"
    }, {
       icon: <FiUsers className='about_icon'/>,
-      title: "Clients",
-      content: "200+ clients worldwide"
+      title: "Studies",
+      content: "Currently studying Computer Science"
    }, {
       icon: <VscFolderLibrary className='about_icon'/>,
       title: "Projects",
-      content: "80+ completed projects"
+      content: "20+ completed projects"
    }]
 
     return (
@@ -50,10 +50,22 @@ function About() {
                      </article>
                   ))}
                </div>
-                     
+               
                <p>
-               Lorem ipsum dolor sit amet consectetur adipiscing elit, quisque tristique sagittis ornare vitae himenaeos habitasse, fringilla facilisis massa iaculis diam nibh. Iaculis quisque nullam praesent nibh tristique fermentum ridiculus morbi curabitur sociis, dapibus a tempus et auctor eu bibendum magna varius nascetur felis, eros potenti imperdiet faucibus fames nulla proin urna tincidunt. 
-               </p>
+               I think of myself as a person who is hungry for knowledge, eager to learn and
+               improve every single day, with great communication as well as logical skills 
+               and capable of overcoming every challenge!
+               <br />
+               Full Stack web developer already experienced in Agile methodologies and teamwork
+               environments always enthusiastic about facing a new project!
+               <br />
+               Creator of multiple original automated applications such as an Instagram account 
+               that uploads posts at given times with information gathered by web scrapping 
+               different sites (https://www.instagram.com/running.argentina/), an app that 
+               checks the veracity of the license of thousands of airplanes or and program 
+               capable of retrieving  certain tax information about a given list of clients 
+               from the Public Income Federal Administration of Argentina for it to be 
+               analyzed by the professionals.</p>
 
                <a href='#contact' className='btn btn-primary'>Let's Talk</a>
                 

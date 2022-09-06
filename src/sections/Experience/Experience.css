@@ -25,6 +25,7 @@
    border: 1px solid var(--color-primary);
    transition: var(--transition);
    width: 100%;
+   max-width: 800px;
 }
 .experience_card:hover {
    background: var(--color-white);

@@ -11,12 +11,13 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // files
-import IMG1 from '../../assets/portfolio1.jpg';
-import IMG2 from '../../assets/portfolio1.jpg';
-import IMG3 from '../../assets/portfolio1.jpg';
-import IMG4 from '../../assets/portfolio1.jpg';
-import IMG5 from '../../assets/portfolio1.jpg';
-import IMG6 from '../../assets/portfolio1.jpg';
+import IMG1 from '../../assets/portfolio1.png';
+import IMG2 from '../../assets/portfolio1.png';
+import IMG3 from '../../assets/portfolio1.png';
+import IMG4 from '../../assets/portfolio4.png';
+import IMG5 from '../../assets/portfolio5.png';
+import IMG6 from '../../assets/portfolio1.png';
+import IMG7 from '../../assets/portfolio7.png';
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 
@@ -87,34 +88,34 @@ function Portfolio() {
 export default Portfolio;
 
 const projects = [{
-   title: "Este es el titulo del projecto",
+   title: "Professional Portfolio",
    image: IMG1,
-   github: "github.link",
+   github: "https://github.com/gianpetrii/portfolio",
    demo: "demo.link"
    }, {
-   title: "Este es el titulo",
+   title: "Somos Mas ONG",
    image: IMG2,
-   github: "github.link",
+   github: "https://github.com/gianpetrii/alkemy_JSfullstack_challenge",
    demo: "demo.link"
    }, {
-   title: "Este es el titulo",
+   title: "E-commerce website",
    image: IMG3,
    github: "github.link",
    demo: "demo.link"
    }, {
-   title: "Este es el titulo",
+   title: "Running Argentina",
    image: IMG4,
-   github: "github.link",
+   github: "https://github.com/gianpetrii/runers",
    demo: "demo.link"
    }, {
-   title: "Este es el titulo",
+   title: "License Validator",
    image: IMG5,
-   github: "github.link",
+   github: "https://github.com/gianpetrii/Matriculador",
    demo: "demo.link"
    }, {
-   title: "Este es el titulo",
+   title: "Sudoku with visual AI Solver",
    image: IMG6,
-   github: "github.link",
+   github: "https://github.com/gianpetrii/Sudoku-with-visual-AI-Solver",
    demo: "demo.link"
    }
 ]

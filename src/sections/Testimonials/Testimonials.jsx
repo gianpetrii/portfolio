@@ -12,9 +12,6 @@ import "swiper/css/navigation";
 
 // Files
 import AVATAR1 from '../../assets/avatar1.jpg';
-import AVATAR2 from '../../assets/avatar2.jpg';
-import AVATAR3 from '../../assets/avatar3.jpg';
-import AVATAR4 from '../../assets/avatar4.jpg';
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 

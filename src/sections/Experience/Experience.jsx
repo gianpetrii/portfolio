@@ -71,7 +71,7 @@ const cards = [{
          level: "Experienced"
       }, {
          title: "Redux",
-         level: "Experienced"
+         level: "Intermediate"
       }, {
          title: "Bootstrap",
          level: "Experienced"
@@ -80,7 +80,7 @@ const cards = [{
          level: "Experienced"
       }, {
          title: "Context / Redux",
-         level: "Experienced"
+         level: "Intermediate"
       }, {
          title: "UI / UX Design",
          level: "Experienced"
@@ -103,7 +103,7 @@ const cards = [{
          level: "Experienced"
       }, {
          title: "MySQL",
-         level: "Experienced"
+         level: "Intermediate"
       }, {
          title: "Postman / Thunder Client",
          level: "Experienced"
@@ -119,10 +119,10 @@ const cards = [{
          level: "Experienced"
       }, {
          title: "Problem-solving skills",
-         level: "Experienced"
+         level: "Intermediate"
       }, {
          title: "Mathematical aptitude",
-         level: "Experienced"
+         level: "Intermediate"
       }, {
          title: "Testing",
          level: "Experienced"
@@ -137,13 +137,24 @@ const cards = [{
          title: "Git / GitHub",
          level: "Experienced"
       }, {
-         title: "Scrum methodologies",
+         title: "Agile methodologies",
          level: "Experienced"
       }, {
-         title: "Trello / Jira (organization)",
+         title: "Trello / Jira / Asana",
          level: "Experienced"
       }, {
          title: "Dev Tools",
+         level: "Intermediate"
+      },  {
+         title: "Figma / Adobe XD",
+         level: "Intermediate"
+      }]
+   }/*, {
+      id: 3,
+      type: "",
+      experiences:  [{
+         title: "APPIAN",
          level: "Experienced"
       }]
-   }]
+   }*/
+];

@@ -8,6 +8,7 @@ This is my personal portoflio, a space created in order to showcase the projects
 
 -  [x] Change color pallette
 -  [ ] Add theme versions with different color pallettes
+-  [ ] Add languages with different languages
 -  [ ] Add introductory animation
 
 #### Nav:
@@ -38,6 +39,7 @@ This is my personal portoflio, a space created in order to showcase the projects
 -  [ ] Change titles
 -  [ ] Change links
 -  [x] When mobile make scroll with swiperJS
+-  [ ] Take out navigation on swiper when scrolling
 
 #### Testimonials:
 
