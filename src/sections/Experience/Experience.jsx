@@ -6,13 +6,41 @@ import { BsPatchCheckFill } from 'react-icons/bs';
 import { MdOutlineFlipCameraAndroid } from 'react-icons/md';
 
 // hooks
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Experience() {
 
-   // para manejo de clicked experience
-   const [clickedExp, setClickedExp] = useState(["active", "non", "non"]);
-   const [mobileActiveCard, setMobileActiveCard] = useState(["clicked", "not"]);
+   // SET ACTIVE EXPERIENCE
+   const [activeExp, setActiveExp] = useState(0);
+
+   const handleMoreInfo = (id) => {
+       if (activeExp == id) {
+           setActiveExp(-1);
+       } else {
+           setActiveExp(id);
+       }
+   };
+
+
+
+
+
+   // handle one full stack card when mobile
+   const [isSmallerThanTablet, setIsSmallerThanTablet] = useState(false);
+   
+   useEffect(() => {
+      function handleResize() {
+        if (window.innerWidth < 700) {
+          setIsSmallerThanTablet(true);
+        }
+      }
+  
+      handleResize();
+  
+      window.addEventListener("resize", handleResize);
+  
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     return (
       <section id='experience' className='experiece-section'>
@@ -20,39 +48,41 @@ function Experience() {
          <h2>My Experience</h2>
 
          <div className='experience_type'>
-            <h3 onClick={() => setClickedExp(["active", "non", "non"])} className={clickedExp[0]}>Full Stack</h3>
-            <h3 onClick={() => setClickedExp(["non", "active", "non"])} className={clickedExp[1]}>Python/JS Automation</h3>
-            <h3 onClick={() => setClickedExp(["non", "non", "active"])} className={clickedExp[2]}>General Skills</h3>
+            <h3 onClick={() => handleMoreInfo(`${cards[0].id}`)} className={activeExp === `${cards[0].id}` && "active"}>Full Stack</h3>
+            <h3 onClick={() => handleMoreInfo(`${cards[2].id}`)} className={activeExp === `${cards[2].id}` && "active"}>Python/JS Automation</h3>
+            <h3 onClick={() => handleMoreInfo(`${cards[3].id}`)} className={activeExp === `${cards[3].id}` && "active"}>General Skills</h3>
          </div>
 
          <div className="container experience_container">
             
-            {cards.map(card => (
-               
-               <div className={card.clicked === undefined ? "experience_card "+ clickedExp[card.id] :
-               "experience_card "+ clickedExp[card.id] + " " + mobileActiveCard[0]} 
-               onClick={() => card.clicked === undefined ? <></> : setMobileActiveCard(card.clicked)}>
-               
-                  {card.type === "" ? <></> : 
-                  <>
-                     <h3>{card.type} <MdOutlineFlipCameraAndroid className='experience_flip_icon'/></h3>
-                     
-                  </>}
-                  
-                     <div className='experience_content'>
-                           {card.experiences.map(experience => (
-                              <article className="experience_details ">
-                                 <BsPatchCheckFill className='experience_icon'/>
-                                 <div>
-                                    <h4>{experience.title}</h4>
-                                    <small className='text-light'>{experience.level}</small>
-                                 </div>   
-                              </article>
-                           ))}
-                     </div>
+            {cards.map(card => <>
 
-               </div>
-               ))}
+               {activeExp === `${card.id}` && (
+
+                  <div className="experience_card" >
+
+                     {card.type === "" ? <></> : 
+                     <>
+                        <h3>{card.type} <MdOutlineFlipCameraAndroid className='experience_flip_icon'/></h3>
+                        
+                     </>}
+                     
+                        <div className='experience_content'>
+                              {card.experiences.map(experience => (
+                                 <article className="experience_details ">
+                                    <BsPatchCheckFill className='experience_icon'/>
+                                    <div>
+                                       <h4>{experience.title}</h4>
+                                       <small className='text-light'>{experience.level}</small>
+                                    </div>   
+                                 </article>
+                              ))}
+                        </div>
+
+                  </div>               
+
+               )}
+            </>)}
 
          </div>
       </section>

@@ -55,17 +55,17 @@
 }
 
 /* ACTIVE and NON ACTIVE TEXT */
-.experience_type .non, .experience_type .active {
+.experience_type h3 {
    border-bottom-color:transparent;
 }
 .experience_type .active {
-   color: var(--color-primary);
+   color: var(--color-primary) !important;
 } 
-.experience_type .non:hover {
+.experience_type h3:hover {
    border-bottom-color: var(--color-white);
 }
 .experience_type .active:hover {
-   border-bottom-color: var(--color-primary);
+   border-bottom-color: var(--color-primary) !important;
 }
 
 

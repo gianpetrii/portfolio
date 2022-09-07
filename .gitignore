@@ -4,3 +4,9 @@ package-lock.json
 build
 .zip
 .rar
+
+# IMPORTANTE: 
+#
+# corro npm run build --> crea archivo buid
+# voy al hosting (webhostapp.com) y 
+# ahi dentro de public.html tengo que soltar los archivos de build
