@@ -14,7 +14,7 @@ function Experience() {
    const [activeExp, setActiveExp] = useState(0);
 
    const handleMoreInfo = (id) => {
-       if (activeExp == id) {
+       if (activeExp === id) {
            setActiveExp(-1);
        } else {
            setActiveExp(id);
@@ -59,7 +59,8 @@ function Experience() {
 
                {activeExp === `${card.id}` && (
 
-                  <div className="experience_card" >
+                  <div className="experience_card" git status
+                  >
 
                      {card.type === "" ? <></> : 
                      <>

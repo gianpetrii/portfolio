@@ -33,7 +33,7 @@ function Services() {
    const [activeService, setActiveService] = useState(0);
 
    const handleMoreInfo = (id) => {
-       if (activeService == id) {
+       if (activeService === id) {
            setActiveService(0);
        } else {
            setActiveService(id);

@@ -52,7 +52,7 @@ function Portfolio() {
             slidesPerView={isSmallerThanTablet}
             spaceBetween={30}
             autoplay={{
-               delay: 3000,
+               delay: 100000,
                disableOnInteraction: false,
             }}
             pagination={{

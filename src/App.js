@@ -21,6 +21,14 @@ const App = () => {
     return (
         <>
             <Nav />
+            <Header />
+            <About />
+            <Experience />
+            <Services />
+            <Portfolio />
+            <Contact />
+            <Footer />
+            {/*
             <ScrollContainer>
                <ScrollPage page={0}>
                   <Animator animation={batch(Fade(), MoveOut(0, -100), Zoom(0.5, 1))}>
@@ -46,12 +54,12 @@ const App = () => {
                   <Animator animation={batch(Fade(), MoveOut(0, -100), Zoom(0.5, 1))}>
                      <Portfolio />
                   </Animator>
-               </ScrollPage>{/*
+               </ScrollPage>
                <ScrollPage page={5}>
                   <Animator animation={batch(Fade(), MoveOut(0, -100), Zoom(0.5, 1))}>
                      <Testimonials />
                   </Animator>
-               </ScrollPage>*/}
+               </ScrollPage>
                <ScrollPage page={6}>
                   <Animator animation={batch(Fade(), MoveOut(0, -100), Zoom(0.5, 1))}>
                      <Contact />
@@ -59,6 +67,7 @@ const App = () => {
                </ScrollPage>
                <Footer />
             </ScrollContainer>
+            */}
             
                      
                      
