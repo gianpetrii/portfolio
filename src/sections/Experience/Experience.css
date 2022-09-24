@@ -54,25 +54,22 @@
    margin-top: 50px;
 }
 
-/* ACTIVE and NON ACTIVE TEXT */
+/* SECTION TITLES */
 .experience_type h3 {
    border-bottom-color:transparent;
 }
-.experience_type .active {
-   color: var(--color-primary) !important;
-} 
 .experience_type h3:hover {
    border-bottom-color: var(--color-white);
 }
-.experience_type .active:hover {
+/* when title clicked */
+.experience_type .clicked-section {
+   color: var(--color-primary) !important;
+} 
+
+.experience_type .clicked-section:hover {
    border-bottom-color: var(--color-primary) !important;
 }
 
-
-/* ACTIVE and NON ACTIVE */
-.experience_container .non {
-   display: none;
-}
 
 
 

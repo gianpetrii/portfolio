@@ -14,7 +14,7 @@ function Header() {
             <div className="container header_container">
                <h5>Hello there! I am</h5>
                <h1>Gianluca Petri</h1>
-               <h5 className="text-light">Full Stack Developer / Python Programmer</h5>
+               <h5 className="text-light">Full Stack Developer / UI-UX Designer</h5>
                     
                <HeaderButtons />
 

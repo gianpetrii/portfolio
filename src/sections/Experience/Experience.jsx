@@ -10,21 +10,6 @@ import { useState, useEffect } from 'react';
 
 function Experience() {
 
-   // SET ACTIVE EXPERIENCE
-   const [activeExp, setActiveExp] = useState(0);
-
-   const handleMoreInfo = (id) => {
-       if (activeExp === id) {
-           setActiveExp(-1);
-       } else {
-           setActiveExp(id);
-       }
-   };
-
-
-
-
-
    // handle one full stack card when mobile
    const [isSmallerThanTablet, setIsSmallerThanTablet] = useState(false);
    
@@ -42,48 +27,73 @@ function Experience() {
       return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    return (
+
+
+
+   // SET ACTIVE SERVICE
+   const [activeCard, setActiveCard] = useState("Full Stack");
+
+   const handleActiveCard = (cardTitle) => {
+      if (activeCard !== cardTitle) {
+         setActiveCard(cardTitle);
+      }
+   };
+
+
+
+
+   return (
       <section id='experience' className='experiece-section'>
          <h5>Skills I Have</h5>
          <h2>My Experience</h2>
 
          <div className='experience_type'>
-            <h3 onClick={() => handleMoreInfo(`${cards[0].id}`)} className={activeExp === `${cards[0].id}` && "active"}>Full Stack</h3>
-            <h3 onClick={() => handleMoreInfo(`${cards[2].id}`)} className={activeExp === `${cards[2].id}` && "active"}>Python/JS Automation</h3>
-            <h3 onClick={() => handleMoreInfo(`${cards[3].id}`)} className={activeExp === `${cards[3].id}` && "active"}>General Skills</h3>
+            {sections.map(section => ( // map de los titulos de secciones
+               <h3 className={activeCard === section.title ? "clicked-section" : ""} 
+               onClick={() => handleActiveCard(`${section.title}`)}>
+                  {section.title}
+               </h3>
+            ))}
          </div>
 
          <div className="container experience_container">
             
-            {cards.map(card => <>
+            {cards.map(card => // hago un map en todas las cards
 
-               {activeExp === `${card.id}` && (
-
-                  <div className="experience_card" git status
-                  >
-
-                     {card.type === "" ? <></> : 
-                     <>
-                        <h3>{card.type} <MdOutlineFlipCameraAndroid className='experience_flip_icon'/></h3>
-                        
-                     </>}
-                     
-                        <div className='experience_content'>
-                              {card.experiences.map(experience => (
-                                 <article className="experience_details ">
-                                    <BsPatchCheckFill className='experience_icon'/>
-                                    <div>
-                                       <h4>{experience.title}</h4>
-                                       <small className='text-light'>{experience.level}</small>
-                                    </div>   
-                                 </article>
-                              ))}
-                        </div>
-
-                  </div>               
-
-               )}
-            </>)}
+               <>
+                  {activeCard ===  `${card.title}` && (  // la card que title coincide la muestro
+                  
+                  <div className="experience_card">
+   
+                  {card.subtitle === "" ? <></> : // si tiene subtitulo lo muestro con el icono
+                     <h3>
+                        {card.subtitle}<MdOutlineFlipCameraAndroid className='experience_flip_icon'/>
+                     </h3>
+                  }
+               
+                  <div className='experience_content'>
+                        {card.experiences.map(experience => (
+                           <article className="experience_details ">
+                              <BsPatchCheckFill className='experience_icon'/>
+                              <div>
+                                 <h4>{experience.title}</h4>
+                                 <small className='text-light'>{experience.level}</small>
+                              </div>   
+                           </article>
+                        ))}
+                  </div>
+   
+               </div>
+   
+   
+                  )}
+   
+               
+               
+               
+               
+               </>
+            )}
 
          </div>
       </section>
@@ -92,11 +102,44 @@ function Experience() {
 
 export default Experience;
 
+// list of sections
+const sections = [{
+   title: "UI-UX Design"
+   
+}, {
+   title: "Full Stack"
+}, {
+   title: "General Skills"
+}]
+
 // list of cards
-const cards = [{
-      id: 0,
-      clicked: ["clicked", "not"],
-      type: "Frontend Development",
+const cards = [ {
+   id: 1,
+   title: "UI-UX Design",
+   subtitle: "",
+   experiences:  [{
+      title: "React JS",
+      level: "Experienced"
+   }, {
+      title: "Redux",
+      level: "Intermediate"
+   }, {
+      title: "Bootstrap",
+      level: "Experienced"
+   }, {
+      title: "HTML / CSS",
+      level: "Experienced"
+   }, {
+      title: "Context",
+      level: "Intermediate"
+   }, {
+      title: "Framer motion",
+      level: "Intermediate"
+   }]
+   }, {
+      id: 2,
+      title: "Full Stack",
+      subtitle: "Frontend Development",
       experiences:  [{
          title: "React JS",
          level: "Experienced"
@@ -110,16 +153,16 @@ const cards = [{
          title: "HTML / CSS",
          level: "Experienced"
       }, {
-         title: "Context / Redux",
+         title: "Context",
          level: "Intermediate"
       }, {
-         title: "UI / UX Design",
-         level: "Experienced"
+         title: "Framer motion",
+         level: "Intermediate"
       }]
    }, {
-      id: 0,
-      clicked: ["not", "clicked"],
-      type: "Backend Development",
+      id: 3,
+      title: "Full Stack",
+      subtitle: "Backend Development",
       experiences:  [{
          title: "Node JS",
          level: "Experienced"
@@ -140,30 +183,9 @@ const cards = [{
          level: "Experienced"
       }]
    }, {
-      id: 1,
-      type: "",
-      experiences:  [{
-         title: "Python / JavaScript",
-         level: "Experienced"
-      }, {
-         title: "Selenium Webdriver",
-         level: "Experienced"
-      }, {
-         title: "Problem-solving skills",
-         level: "Intermediate"
-      }, {
-         title: "Mathematical aptitude",
-         level: "Intermediate"
-      }, {
-         title: "Testing",
-         level: "Experienced"
-      }, {
-         title: "Debugging",
-         level: "Experienced"
-      }]
-   }, {
-      id: 2,
-      type: "",
+      id: 4,
+      title: "General Skills",
+      subtitle: "",
       experiences:  [{
          title: "Git / GitHub",
          level: "Experienced"
@@ -180,12 +202,5 @@ const cards = [{
          title: "Figma / Adobe XD",
          level: "Intermediate"
       }]
-   }/*, {
-      id: 3,
-      type: "",
-      experiences:  [{
-         title: "APPIAN",
-         level: "Experienced"
-      }]
-   }*/
+   }
 ];

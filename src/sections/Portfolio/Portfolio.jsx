@@ -40,9 +40,11 @@ function Portfolio() {
       window.addEventListener("resize", handleResize);
   
       return () => window.removeEventListener("resize", handleResize);
-    }, []);
+   }, []);
    
    
+
+
    return (
       <section id='portfolio'>
          <h5>My best ventures</h5>

@@ -56,16 +56,10 @@ function About() {
                improve every single day, with great communication as well as logical skills 
                and capable of overcoming every challenge!
                <br />
-               Full Stack web developer already experienced in Agile methodologies and teamwork
-               environments always enthusiastic about facing a new project!
+               Full Stack web developer already experienced with Scrum methodologies and teamwork
+               environments, always enthusiastic about facing a new project!
                <br />
-               Creator of multiple original automated applications such as an Instagram account 
-               that uploads posts at given times with information gathered by web scrapping 
-               different sites (https://www.instagram.com/running.argentina/), an app that 
-               checks the veracity of the license of thousands of airplanes or and program 
-               capable of retrieving  certain tax information about a given list of clients 
-               from the Public Income Federal Administration of Argentina for it to be 
-               analyzed by the professionals.</p>
+               </p>
 
                <a href='#contact' className='btn btn-primary'>Let's Talk</a>
                 
