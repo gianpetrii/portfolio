@@ -1,29 +1,53 @@
+// react
+import { useState, useEffect } from "react";
+
 // Estilos
 import './Header.css';
 
-// Files
+// Files and dependencies
 import HeaderButtons from "../../components/HeaderButtons/HeaderButtons";
 import HeaderSocials from '../../components/HeaderSocials/HeaderSocials';
-import MyImage from "../../assets/me.png";
+import Typical from "react-typical";
+
+
 
 
 function Header() {
+
+
+
+
+
    return (
       <>
          <header>
             <div className="container header_container">
-               <h5>Hello there! I am</h5>
-               <h1>Gianluca Petri</h1>
-               <h5 className="text-light">Full Stack Developer / UI-UX Designer</h5>
-                    
-               <HeaderButtons />
+               <h5 className="text-light">Hello there! My name is</h5>
+               <h1 className="header-name">Gianluca Petri</h1>
 
-               <HeaderSocials />
+               <div className="header-animation-container">
                   
-               <div className='me'>
-                  <img src={MyImage} alt="Image of myself" />
+                  <div className="header-animation">
+                     <h1>I'm a</h1>
+                  
+                     <h1>
+                        <Typical 
+                        loop={Infinity}
+                        wrapper="i"
+                        steps={[
+                           " Full Stack Developer",
+                           2500,
+                           " UI / UX Designer",
+                           2500
+                        ]}
+                        />
+                     </h1>
+                  </div>
+                  <HeaderButtons />
+                  <HeaderSocials />
                </div>
-
+               
+                  
                <a href="#contact" className="scroll_down">Scroll Down</a>
             </div>
          </header>
