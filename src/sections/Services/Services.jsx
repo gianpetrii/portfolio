@@ -80,51 +80,45 @@ export default Services;
 
 const servicios = [{
    id: 1,
-   title: "Frontend Development",
+   title: "UI / UX Design",
    services: [{
-      content: "- Este seria sdfsdfdsuno de los servicios"
+      content: "- user-friendly interfaces."
       }, {
-      content: "- Este seria sdfsdfdsuno de los servicios"
+      content: "- composition and graphic design."
       }, {
-      content: "- Este seria sdfsdfdsuno de los servicios"
+      content: "- color palettes, typography and schemes."
       }, {
-      content: "- Este seria sdfsdfdsuno de los servicios"
-      }, {
-      content: "- Este seria sdfsdfdsuno de los servicios"
-      }, {
-      content: "- Este seria sdfsdfdsuno de los servicios"
+      content: "- branding and brand identity."
       }]
    }, {
       id: 2,
-      title: "Backend Development",
+      title: "Frontend Development",
       services: [{
-         content: "- Este seria sdfsdfdsuno de los servicios"
+         content: "- Interactive and Dynamic websites."
          }, {
-         content: "- Este seria sdfsdfdsuno de los servicios"
+         content: "- Implement APIs and RESTful Services."
          }, {
-         content: "- Este seria sdfsdfdsuno de los servicios"
+         content: "- Handle HTML, JavaScript and CSS to bring concepts to life."
          }, {
-         content: "- Este seria sdfsdfdsuno de los servicios"
+         content: "- Manage software workflow."
          }, {
-         content: "- Este seria sdfsdfdsuno de los servicios"
-         }, {
-         content: "- Este seria sdfsdfdsuno de los servicios"
+         content: "- Responsive Design."
          }]
    }, {
       id: 3,
-      title: "Python Task Automation",
+      title: "Backend Development",
       services: [{
-         content: "- Este seria sdfsdfdsuno de los servicios"
+         content: "- Ensure the website performs correctly."
          }, {
-         content: "- Este seria sdfsdfdsuno de los servicios"
+         content: "- Database creation and managment."
          }, {
-         content: "- Este seria sdfsdfdsuno de los servicios"
+         content: "- Back-end logic."
          }, {
-         content: "- Este seria sdfsdfdsuno de los servicios"
+         content: "- Develop application programming interfaces (APIs)."
          }, {
-         content: "- Este seria sdfsdfdsuno de los servicios"
+         content: "- Test and debugg."
          }, {
-         content: "- Este seria sdfsdfdsuno de los servicios"
+         content: "- Backend architecture and server managment."
          }]
    } 
 ]
