@@ -1,4 +1,7 @@
 /* CONTAINERS */
+.about {
+   margin-bottom: 250px;
+}
 
 .about_container {
    display: grid;

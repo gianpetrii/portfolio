@@ -1,8 +1,7 @@
 /* ============== GENERAL HEADER STYLE ============== */
 header {
-   /* saque hegiht definido xq me recortaba imagen */
    padding-top: 10vh;
-   overflow: hidden;
+   margin-bottom: 250px;
 }
 
 .header_container {

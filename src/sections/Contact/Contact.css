@@ -1,4 +1,8 @@
 /* ======================= CONTAINERS ======================= */ 
+.contact {
+   margin-bottom: 250px;
+}
+
 .contact-container {
    width: 58%;
    display: grid;

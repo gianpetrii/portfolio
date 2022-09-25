@@ -41,7 +41,7 @@ function Testimonials() {
 
 
    return (
-      <section id='testimonials'>
+      <section id='testimonials' className="testimonials">
          <h5>Review from clients</h5>
          <h2>Testimonials</h2>
 

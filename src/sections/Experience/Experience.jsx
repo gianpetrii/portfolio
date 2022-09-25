@@ -58,7 +58,7 @@ function Experience() {
 
 
    return (
-      <section id='experience' className='experiece-section'>
+      <section id='experience' className='experiece'>
          <h5>Skills I Have</h5>
          <h2>My Experience</h2>
 
@@ -79,8 +79,9 @@ function Experience() {
                   {activeCard ===  `${card.title}` && (  // la card que title coincide la muestro
                   
                      <>
-                     
+
                      <div 
+                     key={card.id}
                      className={cardFlipped === card.id ? "experience_card non-active" : "experience_card"}
                      onClick={() => handleFlipCard(`${card.title}`, `${card.id}`)}
                      >
@@ -93,7 +94,7 @@ function Experience() {
                      
                         <div className='experience_content'>
                               {card.experiences.map(experience => (
-                                 <article className="experience_details ">
+                                 <article key={experience.title} className="experience_details ">
                                     <BsPatchCheckFill className='experience_icon'/>
                                     <div>
                                        <h4>{experience.title}</h4>

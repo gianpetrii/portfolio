@@ -42,7 +42,7 @@ function Services() {
   
 
    return (
-      <section id='services'>
+      <section id='services' className='services'>
          <h5>What I Offer</h5>
          <h2>Services</h2>
 
@@ -58,7 +58,7 @@ function Services() {
 
                      <ul className='service-list'>
                      {servicio.services.map(service => (
-                        <li>
+                        <li key={service.content}>
                            <p>{service.content}</p>
                         </li>
                      ))}

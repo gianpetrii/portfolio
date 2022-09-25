@@ -1,10 +1,13 @@
 /* CONTAINERS */
+.services {
+   margin-bottom: 250px;
+}
 
 .services-container {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 3rem;
-   height: 500px;
+   height: 350px;
 }
 
 .service-article {

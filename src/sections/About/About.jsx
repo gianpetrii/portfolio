@@ -29,7 +29,7 @@ function About() {
    }]
 
     return (
-      <section id='about'>
+      <section id='about' className='about'>
          <h5>Get to Know</h5>
          <h2>About Me</h2>
 
@@ -43,7 +43,7 @@ function About() {
             <div className="about_content">
                <div className="about_cards">
                   {articles.map(article => (
-                     <article className='about_card'>
+                     <article key={article.title} className='about_card'>
                            {article.icon}
                            <h5>{article.title}</h5>
                            <small>{article.content}</small>
