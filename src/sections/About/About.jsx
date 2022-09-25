@@ -2,7 +2,7 @@
 import './About.css';
 
 // files
-import AboutImage from '../../assets/me-about.jpg';
+import AboutImage from '../../assets/me-about.jpeg';
 
 // dependencies
 import { FaAward } from 'react-icons/fa';
@@ -35,8 +35,8 @@ function About() {
 
          <div className="container about_container" >
             <div className='about_me'>
-               <div className='about_me-image'>
-                  <img src={AboutImage} alt="About Image" />
+               <div className='about_me-image-container'>
+                  <img className='about-me-image' src={AboutImage} alt="About Image" />
                </div>
             </div>
 

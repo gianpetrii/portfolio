@@ -18,14 +18,22 @@
 
 
 /* IMG */
-.about_me-image {
+.about_me-image-container {
    border-radius: 2rem;
    overflow: hidden;
    transform: rotate(10deg);
    transition: var(--transition);
+   overflow: hidden;
 }
-.about_me-image:hover {
+.about_me-image-container:hover {
    transform: rotate(0deg);
+}
+
+.about-me-image {
+   width: 100%;
+   object-fit: cover;
+   height: 100%;
+   aspect-ratio: 1/1;
 }
 
 

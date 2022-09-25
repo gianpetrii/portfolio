@@ -15,7 +15,7 @@ function Experience() {
    
    useEffect(() => {
       function handleResize() {
-        if (window.innerWidth < 700) {
+        if (window.innerWidth < 800) {
           setIsSmallerThanTablet(true);
         }
       }
@@ -39,6 +39,21 @@ function Experience() {
       }
    };
 
+   // handle flipping card in mobile view
+   const [cardFlipped, setCardFlipped] = useState(3);
+
+   const handleFlipCard = (cardSubtitle, cardId) => {
+      // chequeo subtitulo full stack y si estoy en mobile
+      if(cardSubtitle === "Full Stack" && isSmallerThanTablet === true) { 
+         console.log("mobile: " + isSmallerThanTablet);
+         console.log("recien clickee: " + cardId);
+         if(cardFlipped !== cardId) {
+            setCardFlipped(cardId);
+            console.log("cambio a:" + cardFlipped);
+         }
+      }
+   };
+
 
 
 
@@ -49,8 +64,8 @@ function Experience() {
 
          <div className='experience_type'>
             {sections.map(section => ( // map de los titulos de secciones
-               <h3 className={activeCard === section.title ? "clicked-section" : ""} 
-               onClick={() => handleActiveCard(`${section.title}`)}>
+               <h3 key={section.title} className={activeCard === section.title ? "clicked-section" : ""} 
+                  onClick={() => handleActiveCard(`${section.title}`)}>
                   {section.title}
                </h3>
             ))}
@@ -63,42 +78,42 @@ function Experience() {
                <>
                   {activeCard ===  `${card.title}` && (  // la card que title coincide la muestro
                   
-                  <div className="experience_card">
-   
-                  {card.subtitle === "" ? <></> : // si tiene subtitulo lo muestro con el icono
-                     <h3>
-                        {card.subtitle}<MdOutlineFlipCameraAndroid className='experience_flip_icon'/>
-                     </h3>
-                  }
-               
-                  <div className='experience_content'>
-                        {card.experiences.map(experience => (
-                           <article className="experience_details ">
-                              <BsPatchCheckFill className='experience_icon'/>
-                              <div>
-                                 <h4>{experience.title}</h4>
-                                 <small className='text-light'>{experience.level}</small>
-                              </div>   
-                           </article>
-                        ))}
-                  </div>
-   
-               </div>
-   
-   
+                     <>
+                     
+                     <div 
+                     className={cardFlipped === card.id ? "experience_card non-active" : "experience_card"}
+                     onClick={() => handleFlipCard(`${card.title}`, `${card.id}`)}
+                     >
+      
+                        {card.subtitle === "" ? <></> : // si tiene subtitulo lo muestro con el icono
+                           <h3>
+                              {card.subtitle}<MdOutlineFlipCameraAndroid className='experience_flip_icon'/>
+                           </h3>
+                        }
+                     
+                        <div className='experience_content'>
+                              {card.experiences.map(experience => (
+                                 <article className="experience_details ">
+                                    <BsPatchCheckFill className='experience_icon'/>
+                                    <div>
+                                       <h4>{experience.title}</h4>
+                                       <small className='text-light'>{experience.level}</small>
+                                    </div>   
+                                 </article>
+                              ))}
+                        </div>
+      
+                     </div>
+                     </>
+
                   )}
-   
-               
-               
-               
-               
                </>
             )}
 
          </div>
       </section>
-    );
-}
+   );
+};
 
 export default Experience;
 
@@ -110,7 +125,7 @@ const sections = [{
    title: "Full Stack"
 }, {
    title: "General Skills"
-}]
+}];
 
 // list of cards
 const cards = [ {
@@ -203,4 +218,4 @@ const cards = [ {
          level: "Intermediate"
       }]
    }
-];
+]

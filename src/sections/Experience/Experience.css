@@ -129,6 +129,10 @@
    .experience_card:hover .experience_flip_icon {
       color: var(--color-bg-variant);
    }
+
+   .experience_container .non-active {
+      display: none;
+   }
 }
 
 
