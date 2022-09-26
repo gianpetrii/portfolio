@@ -41,6 +41,10 @@ function Header() {
       title: '--color-light',
       valueIce: 'rgba(255, 255, 255, 0.6)',
       valueMono: 'rgba(255, 255, 255, 0.6)',
+   }, {
+      title: '--typography',
+      valueIce: 'Poppins',
+      valueMono: 'PT Sans',
    }]
 
    const handleSwitchTheme = (styleType) => {
@@ -67,11 +71,11 @@ function Header() {
                <h1 className="header-name">Gianluca Petri</h1>
                
                <div className="header-themes">
-                  <h4>Choose Theme: </h4>
-                  <h4 className="theme"
-                  onClick={() => handleSwitchTheme("blue-ice")}>blue-ice</h4>
-                  <h4 className="theme"
-                  onClick={() => handleSwitchTheme("monocromatic")}>monocromatic</h4>
+                  <h5>Choose Theme: </h5>
+                  <h5 className="theme"
+                  onClick={() => handleSwitchTheme("blue-ice")}>blue-ice</h5>
+                  <h5 className="theme"
+                  onClick={() => handleSwitchTheme("monocromatic")}>monocromatic</h5>
                </div>
 
 

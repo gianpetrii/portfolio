@@ -92,4 +92,9 @@ header {
    .header_socials, .scroll_down {
       display: none;
    }
+
+   .header-themes {
+      font-size:small;
+   }
+   
 }

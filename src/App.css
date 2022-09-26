@@ -22,6 +22,9 @@
     --color-primary-variant: #DFF6FF;
     --color-white: #FFF;
     --color-light: rgba(255, 255, 255, 0.6);
+
+    /* TYPOGRAPHY */
+    --typography: 'Poppins';
     /* 
     COLOR PALLETTE 
     #EE4540
@@ -47,7 +50,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--typography), sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
