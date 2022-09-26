@@ -13,17 +13,11 @@ This is my personal portoflio, a space created in order to showcase the projects
 
 #### Nav:
 
--  [ ] See if it can turn like when clicked when a section scrolls into view
-
 #### Header:
 
--  [ ] When download CV ask if english / spanish / both
--  [ ] Change photo
--  [ ] Change header links linkedin, github, demos
+-  Change hover of download cv to onclick
 
 #### About:
-
--  [ ] Change photo
 
 #### Experience:
 
@@ -35,21 +29,12 @@ This is my personal portoflio, a space created in order to showcase the projects
 
 #### Portfolio:
 
--  [ ] Change images
--  [ ] Change titles
--  [ ] Change links
--  [x] When mobile make scroll with swiperJS
--  [ ] Take out navigation on swiper when scrolling
+-  Add Movie list emulator
+-  Upload somos mas ong to vercel or 000webhostapp
+-
 
 #### Testimonials:
 
--  [x] Add swiperJS
--  [x] Display none but leave it done
-
 #### Contact:
 
--  [x] emailjs working
-
 #### Footer:
-
--  [x] all

@@ -1,0 +1,26 @@
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+.dropbtn {
+   background-color: transparent;
+   font-size: medium;
+   padding: 1rem 1.2rem;
+}
+
+.dropdown-content {
+   display: block;
+   position: absolute;
+   background-color: transparent;
+   z-index: 1;
+}
+ 
+.dropdown-content a {
+   color: var(--color-primary);
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+ 
+.dropdown-content a:hover {color: #ddd;}
