@@ -14,6 +14,7 @@ import "swiper/css/navigation";
 import IMG1 from '../../assets/portfolio1.png';
 import IMG2 from '../../assets/portfolio2.png';
 import IMG3 from '../../assets/portfolio3.png';
+import IMG4 from '../../assets/portfolio4.png';
 
 import { Autoplay, Pagination, Navigation } from "swiper";
 
@@ -105,7 +106,7 @@ const projects = [{
    demo: "https://sanity-ecommerce-next-react-w-stripe.vercel.app/"
    }, {
    title: "Netflix emulator",
-   image: IMG1,
+   image: IMG4,
    github: "https://github.com/gianpetrii/runers",
    demo: "https://my-netflix-emulator.vercel.app/"
    }
