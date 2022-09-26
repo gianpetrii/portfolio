@@ -112,7 +112,9 @@
 
 /*   (phones)   */
 @media screen and (max-width: 800px) {
-   
+   .experiece {
+      height: 900px;
+   }
 
    .experience_container {
       display: grid;

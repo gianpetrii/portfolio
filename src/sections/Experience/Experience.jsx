@@ -25,7 +25,7 @@ function Experience() {
       window.addEventListener("resize", handleResize);
   
       return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    });
 
 
 
@@ -45,7 +45,6 @@ function Experience() {
    const handleFlipCard = (cardSubtitle, cardId) => {
       // chequeo subtitulo full stack y si estoy en mobile
       if(cardSubtitle === "Full Stack" && isSmallerThanTablet === true) { 
-         console.log("mobile: " + isSmallerThanTablet);
          console.log("recien clickee: " + cardId);
          if(cardFlipped !== cardId) {
             setCardFlipped(cardId);
@@ -53,8 +52,6 @@ function Experience() {
          }
       }
    };
-
-
 
 
    return (
@@ -82,13 +79,13 @@ function Experience() {
 
                      <div 
                      key={card.id}
-                     className={cardFlipped === card.id ? "experience_card non-active" : "experience_card"}
+                     className={cardFlipped=== card.id ? "experience_card" : "experience_card"}
                      onClick={() => handleFlipCard(`${card.title}`, `${card.id}`)}
                      >
       
                         {card.subtitle === "" ? <></> : // si tiene subtitulo lo muestro con el icono
                            <h3>
-                              {card.subtitle}<MdOutlineFlipCameraAndroid className='experience_flip_icon'/>
+                              {card.subtitle}{/*<MdOutlineFlipCameraAndroid className='experience_flip_icon'/>*/}
                            </h3>
                         }
                      
