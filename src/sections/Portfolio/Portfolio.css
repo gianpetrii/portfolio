@@ -12,7 +12,7 @@
 
 /* ARTICLE */
 .portfolio-article {
-   background: var(--color-bg);
+   background-color: var(--color-bg);
    padding: 1.3rem;
    border-radius: 2rem;
    border: 1px solid var(--color-primary);
@@ -22,7 +22,8 @@
 }
 .portfolio-article:hover {
    border-color: var(--color-white);
-   background: transparent;
+   background-color: transparent;
+   transition: var(--transition);
 }
 
 .swiper-pagination {

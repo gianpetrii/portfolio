@@ -14,7 +14,6 @@ import Footer from './sections/Footer/Footer';
 import './App.css';
 
 // dependencies
-import { ScrollContainer, ScrollPage, Animator, batch, Fade, Sticky, MoveOut, Zoom } from 'react-scroll-motion';
 
 
 const App = () => {
@@ -28,57 +27,6 @@ const App = () => {
             <Portfolio />
             <Contact />
             <Footer />
-            {/*
-            <ScrollContainer>
-               <ScrollPage page={0}>
-                  <Animator animation={batch(Fade(), MoveOut(0, -100), Zoom(0.5, 1))}>
-                     <Header />
-                  </Animator>
-               </ScrollPage>
-               <ScrollPage page={1}>
-                  <Animator animation={batch(Fade(), MoveOut(0, -100), Zoom(0.5, 1))}>
-                     <About />
-                  </Animator>
-               </ScrollPage>
-               <ScrollPage page={2}>
-                  <Animator animation={batch(Fade(), MoveOut(0, -100), Zoom(0.5, 1))}>
-                     <Experience />
-                  </Animator>
-               </ScrollPage>
-               <ScrollPage page={3}>
-                  <Animator animation={batch(Fade(), MoveOut(0, -100), Zoom(0.5, 1))}>
-                     <Services />
-                  </Animator>
-               </ScrollPage>
-               <ScrollPage page={4}>
-                  <Animator animation={batch(Fade(), MoveOut(0, -100), Zoom(0.5, 1))}>
-                     <Portfolio />
-                  </Animator>
-               </ScrollPage>
-               <ScrollPage page={5}>
-                  <Animator animation={batch(Fade(), MoveOut(0, -100), Zoom(0.5, 1))}>
-                     <Testimonials />
-                  </Animator>
-               </ScrollPage>
-               <ScrollPage page={6}>
-                  <Animator animation={batch(Fade(), MoveOut(0, -100), Zoom(0.5, 1))}>
-                     <Contact />
-                  </Animator>
-               </ScrollPage>
-               <Footer />
-            </ScrollContainer>
-            */}
-            
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-
-
         </>
     );
 }

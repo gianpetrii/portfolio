@@ -66,9 +66,9 @@ function Portfolio() {
 
 
                   {projects.map(project => (
-                     <SwiperSlide className='portfolio-article' key={project.id}>   {/* AGREGAR QUE PARA PHONE SE PASE PARA EL COSTADO */}
+                     <SwiperSlide className='portfolio-article' key={project.title}>
                         <div className="portfolio-div-image">
-                           <img src={project.image} />{/* arreglar tema de ruta imagen */}
+                           <img src={project.image} />
                         </div>
                         <h3>{project.title}</h3>
 
@@ -107,6 +107,6 @@ const projects = [{
    title: "Netflix emulator",
    image: IMG1,
    github: "https://github.com/gianpetrii/runers",
-   demo: "demo.link"
+   demo: "https://my-netflix-emulator.vercel.app/"
    }
 ]

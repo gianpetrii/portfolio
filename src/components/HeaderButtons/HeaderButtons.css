@@ -4,9 +4,8 @@
 }
 
 .dropbtn {
-   background-color: transparent;
    font-size: medium;
-   padding: 1rem 1.2rem;
+   padding: 1rem 1.2rem !important;
 }
 
 .dropdown-content {

@@ -24,8 +24,7 @@ function Nav() {
       <nav>
          <ul>
             {sections.map(section => (
-               <li><a 
-                  key={section.path.replace("#","")} 
+               <li key={section.path.replace("#","")}><a  
                   href={section.path} 
                   className={activeNav === section.path ? "active" : "" }
                   onClick={() => setActiveNav(section.path)}
