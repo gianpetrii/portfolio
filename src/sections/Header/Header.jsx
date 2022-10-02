@@ -1,6 +1,3 @@
-// react
-import { useState, useEffect } from "react";
-
 // Estilos
 import './Header.css';
 
@@ -20,15 +17,15 @@ function Header() {
    const stylesList = [{
       title: '--color-bg',
       valueIce: '#06283D',
-      valueMono: '#e6ccb2',
+      valueMono: '#808f87',
    }, {
       title: '--color-bg-variant',
       valueIce: '#1363DF',
-      valueMono: '#9c6644',
+      valueMono: '#E2EFDE',
    }, {
       title: '--color-primary',
       valueIce: '#47B5FF',
-      valueMono: '#7f5539',
+      valueMono: '#AFD0BF',
    },{
       title: '--color-primary-variant',
       valueIce: '#DFF6FF',

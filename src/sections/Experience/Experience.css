@@ -13,10 +13,20 @@
 
 .experience_type {
    display: flex;
-   gap: 1rem;
+   gap: 1.5rem;
    justify-content: center;
    font-size: 1.2rem;
    margin-bottom: 1.5rem;
+}
+
+.experience-type-divider {
+   content: "";
+   width: 1px;
+   height: 2rem;
+   background-color: var(--color-white);
+   margin-top: 50px;
+   position: relative;
+   top: 1px;
 }
 
 .experience_card {
@@ -29,12 +39,8 @@
    max-width: 800px;
 }
 .experience_card:hover {
-   background: var(--color-white);
    border-color: var(--color-white);
    cursor: default;
-}
-.experience_card:hover h3, .experience_card:hover h4, .experience_card:hover .experience_icon {
-   color: var(--color-bg-variant);
 }
 
 
@@ -71,13 +77,6 @@
    border-bottom-color: var(--color-primary) !important;
 }
 
-
-
-
-.experience_card:hover .text-light {
-   color: var(--color-primary);
-   transition: var(--transition);
-}
 
 .experience_card h3 {
    text-align: center;
@@ -151,6 +150,11 @@
       margin-left: 1%;
       margin-right: 1%;
       gap: 0.7rem;
+   }
+
+   .experience-type-divider {
+      height: 1.5rem;
+      top: 2px;
    }
    
    .experience_type h3 {

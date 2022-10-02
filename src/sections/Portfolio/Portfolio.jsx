@@ -16,7 +16,7 @@ import IMG2 from '../../assets/portfolio2.png';
 import IMG3 from '../../assets/portfolio3.png';
 import IMG4 from '../../assets/portfolio4.png';
 
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 
 
 function Portfolio() {
@@ -57,11 +57,8 @@ function Portfolio() {
                delay: 3000,
                disableOnInteraction: false,
             }}
-            pagination={{
-               clickable: true
-            }}
             navigation={isSmallerThanTablet ? false : true}
-            modules={[Autoplay, Pagination, Navigation]}
+            modules={[Autoplay, Navigation]}
             className="portfolio-container container"
          >
 

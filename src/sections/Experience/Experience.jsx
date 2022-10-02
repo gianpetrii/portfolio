@@ -61,10 +61,19 @@ function Experience() {
 
          <div className='experience_type'>
             {sections.map(section => ( // map de los titulos de secciones
-               <h3 key={section.title} className={activeCard === section.title ? "clicked-section" : ""} 
-                  onClick={() => handleActiveCard(`${section.title}`)}>
-                  {section.title}
-               </h3>
+               
+               <>
+                  {section.title === "Full Stack" && (
+                     <div className='experience-type-divider' />
+                  )}
+                  <h3 key={section.title} className={activeCard === section.title ? "clicked-section" : ""} 
+                     onClick={() => handleActiveCard(`${section.title}`)}>
+                     {section.title}
+                  </h3>
+                  {section.title === "Full Stack" && (
+                     <div className='experience-type-divider' />
+                  )}
+               </>
             ))}
          </div>
 
@@ -118,7 +127,6 @@ export default Experience;
 // list of sections
 const sections = [{
    title: "UI-UX Design"
-   
 }, {
    title: "Full Stack"
 }, {
