@@ -86,10 +86,15 @@ function Header() {
                         loop={Infinity}
                         wrapper="i"
                         steps={[
-                           " Full Stack Developer",
+                           "UI / UX Designer",
                            2500,
-                           " UI / UX Designer",
-                           2500
+                           "Frontend Developer",
+                           2500,
+                           "Backend Manager",
+                           2500,
+                           "Full Stack Programmer",
+                           2500,
+                           
                         ]}
                         />
                      </h1>
