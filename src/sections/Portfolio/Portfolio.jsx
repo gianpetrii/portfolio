@@ -15,6 +15,8 @@ import IMG1 from '../../assets/portfolio1.png';
 import IMG2 from '../../assets/portfolio2.png';
 import IMG3 from '../../assets/portfolio3.png';
 import IMG4 from '../../assets/portfolio4.png';
+import IMG5 from '../../assets/portfolio5.png';
+
 
 import { Autoplay, Navigation } from "swiper";
 
@@ -92,10 +94,10 @@ const projects = [{
    github: "https://github.com/gianpetrii/portfolio",
    demo: "https://gianluca-petri-portfolio.vercel.app/"
    }, {
-   title: "Somos Mas ONG",
+   title: "HooBank Payment App",
    image: IMG2,
-   github: "https://github.com/gianpetrii/alkemy_JSfullstack_challenge",
-   demo: "demo.link"
+   github: "https://github.com/gianpetrii/hoobank-w-vite-react",
+   demo: "https://hoobank-w-vite-react.vercel.app/"
    }, {
    title: "Sanity E-commerce website",
    image: IMG3,
@@ -106,5 +108,10 @@ const projects = [{
    image: IMG4,
    github: "https://github.com/gianpetrii/runers",
    demo: "https://my-netflix-emulator.vercel.app/"
-   }
+   }, {
+      title: "Somos Mas ONG",
+      image: IMG5,
+      github: "https://github.com/gianpetrii/alkemy_JSfullstack_challenge",
+      demo: "demo.link"
+      }
 ]
